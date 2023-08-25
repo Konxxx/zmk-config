@@ -47,9 +47,9 @@
             label = "Default";
 
             bindings = <
-    &kp Q        &kp W        &kp F       &kp P         &kp B                                       &kp J         &kp L        &kp U         &kp Y       &kp SQT
-    &hm LGUI A   &hm LALT R   &hm LCTL S  &hs LSHIFT T  &kp G                                       &kp M         &hs RSHIFT N &hm RCTL E    &hm RALT I  &hm RGUI O
-    &kp Z        &kp X        &kp C       &kp D         &kp V                                       &kp K         &kp H        &kp COMMA     &kp DOT     &kp FSLH
+    &kp Q        &kp W        &kp E       &kp R         &kp T                                       &kp Y         &kp U        &kp I         &kp O       &kp P
+    &hm LGUI A   &hm LALT S   &hm LCTL D  &hs LSHIFT F  &kp G                                       &kp H         &hs RSHIFT J &hm RCTL K    &hm RALT L  &hm RGUI SEMICOLON
+    &kp Z        &kp X        &kp C       &kp V         &kp B                                       &kp N         &kp M        &kp COMMA     &kp DOT     &kp FSLH
                                     &lt MEDIA ESC &lt NAV SPACE  &lt MOUSE TAB    &lt SYM RET &lt NUM BSPC &lt FUNC DEL
             >;
         };
@@ -70,7 +70,7 @@
             label = "Symbols";
 
             bindings = <
-    &kp LBRC     &kp AMPS     &kp STAR      &kp LPAR        &kp RBRC                                   &none       &none       &none      &none        &none
+    &kp LBRC     &kp AMPS     &kp STAR      &kp LPAR        &kp RBRC                                   &kp SQT       &none       &none      &none        &none
     &kp COLON    &kp DLLR     &kp PRCNT     &kp CARET       &kp PLUS                                   &none       &kp RSHIFT  &kp RCTL   &kp RALT     &kp RGUI
     &kp TILDE    &kp EXCL     &kp AT        &kp HASH        &kp PIPE                                   &none       &none       &none      &none        &none
                                             &kp LPAR           &kp RPAR       &kp UNDER        &trans     &none       &none
