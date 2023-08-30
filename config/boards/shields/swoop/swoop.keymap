@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#define HOST_OS 2
 #include "../../../../zmk-nodefree-config/helper.h"
 #include "../../../../zmk-nodefree-config/international_chars/german.dtsi""
 
@@ -53,7 +54,7 @@
     &kp Q        &kp W        &kp E       &kp R         &kp T                                       &kp Y         &kp U        &kp I         &kp O       &kp P
     &hm LGUI A   &hm LALT S   &hm LCTL D  &hs LSHIFT F  &kp G                                       &kp H         &hs RSHIFT J &hm RCTL K    &hm RALT L  &hm RGUI SEMICOLON
     &kp Z        &kp X        &kp C       &kp V         &kp B                                       &kp N         &kp M        &kp COMMA     &kp DOT     &kp FSLH
-                                    &lt MEDIA ESC &lt NAV SPACE  &lt MOUSE TAB    &lt SYM RET &lt NUM BSPC &lt FUNC DEL
+                                    &lt MEDIA ESC &lt NAV SPACE  &lt MOUSE TAB    &lt NUM RET &lt SYM BSPC &lt FUNC DEL
             >;
         };
 
@@ -73,10 +74,10 @@
             label = "Symbols";
 
             bindings = <
-    &kp DQT        &kp LT          &kp GT         &kp APOS          &de_eszett    &kp AMPS   &kp PRCNT         &kp LBKT       &kp RBKT       &kp DLLR
+    &kp DQT        &kp LT          &kp GT         &kp APOS          &de_eszett       &kp AMPS   &kp PRCNT         &kp LBKT       &kp RBKT       &kp DLLR
     &hm LGUI EXCL  &hm LALT MINUS  &hm LCTL PLUS  &hs LSHIFT EQUAL  &kp HASH         &kp PIPE   &hs RSHIFT UNDER  &hm RCTL LPAR  &hm RALT RPAR  &hm RGUI COLON
     &kp CARET      &kp FSLH        &kp STAR       &kp BSLH          &kp GRAVE        &kp TILDE  &kp QMARK         &kp LBRC       &kp RBRC       &kp AT
-                                            &none           &none       &none        &trans     &none       &none
+                                            &none           &none       &none        &none     &trans       &none
             >;
         };
 
@@ -117,10 +118,10 @@
             label = "Number";
 
             bindings = <
-    &kp COMMA    &kp N7       &kp N8       &kp N9        &de_ae                                      &none       &none       &none      &none        &none
-    &kp DOT      &kp N4       &kp N5       &kp N6        &de_oe                                      &none       &kp RSHIFT  &kp RCTL   &kp RALT     &kp RGUI
-    &kp N0       &kp N1       &kp N2       &kp N3        &de_ue                                      &none       &none       &none      &none        &none
-                                           &none       &none        &none         &none         &trans      &none
+    &kp COMMA    &kp N7       &kp N8       &kp N9        &de_ae                   &none       &none       &none      &none        &none
+    &kp DOT      &kp N4       &kp N5       &kp N6        &de_oe                   &none       &kp RSHIFT  &kp RCTL   &kp RALT     &kp RGUI
+    &kp N0       &kp N1       &kp N2       &kp N3        &de_ue                   &none       &none       &none      &none        &none
+                                           &none       &none        &none         &trans         &none      &none
             >;
         };
     };
